@@ -57,31 +57,33 @@
     <h2>Votre panier</h2>
     <button class="close-btn" id="close-cart">&times;</button>
   </div>
-  <div class="cart-items" id="cart-items"></div>
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>Total</span>
-      <span id="cart-total">0 FCFA</span>
-    </div>
+  <div class="cart-scroll">
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total">0 FCFA</span>
+      </div>
 
-    <form id="checkout-form" class="checkout-form">
-      <label>
-        Nom complet
-        <input type="text" id="cust-name" name="name" placeholder="Votre nom" required />
-      </label>
-      <label>
-        Numéro de téléphone
-        <input type="tel" id="cust-phone" name="phone" placeholder="Ex : 07 89 57 35 29" required />
-      </label>
-      <label>
-        Adresse de livraison
-        <textarea id="cust-address" name="address" placeholder="Quartier, commune, repère..." required rows="2"></textarea>
-      </label>
-      <p class="deposit-note">NB : afin de confirmer et de réserver votre commande, nous vous demandons simplement un acompte de 2 000 FCFA.</p>
-      <button type="submit" class="checkout-btn" id="checkout-btn" disabled>
-        Valider sur WhatsApp
-      </button>
-    </form>
+      <form id="checkout-form" class="checkout-form">
+        <label>
+          Nom complet
+          <input type="text" id="cust-name" name="name" placeholder="Votre nom" required />
+        </label>
+        <label>
+          Numéro de téléphone
+          <input type="tel" id="cust-phone" name="phone" placeholder="Ex : 07 89 57 35 29" required />
+        </label>
+        <label>
+          Adresse de livraison
+          <textarea id="cust-address" name="address" placeholder="Quartier, commune, repère..." required rows="2"></textarea>
+        </label>
+        <p class="deposit-note">NB : afin de confirmer et de réserver votre commande, nous vous demandons simplement un acompte de 2 000 FCFA.</p>
+        <button type="submit" class="checkout-btn" id="checkout-btn" disabled>
+          Valider sur WhatsApp
+        </button>
+      </form>
+    </div>
   </div>
 </aside>
 
