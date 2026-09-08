@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Royal Senteur — Parfumerie</title>
+<meta name="description" content="Royal Senteur — une sélection de parfums d'exception. Commandez en ligne, finalisez sur WhatsApp." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#" class="brand"><img src="images/logo.png" alt="Royal Senteur" class="logo" /></a>
+    <button class="cart-toggle" id="cart-toggle">
+      Panier <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Ils oublieront votre nom avant d'oublier votre parfum</h1>
+    <p>40 fragrances triées sur le volet, des plus discrètes aux plus intenses. Trouvez celle qui vous ressemble, ajoutez-la au panier, et on règle tout le reste sur WhatsApp en quelques minutes.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="filters" id="filters"></div>
+</div>
+
+<main class="catalogue">
+  <div class="wrap">
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="images/logo.png" alt="Royal Senteur" class="logo logo-footer" />
+    Commande par WhatsApp — réponse rapide.
+    <div class="social-links">
+      <a href="https://www.instagram.com/royal_senteur?stkn=OGFkYzZpNDY1cHVi&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/1CygJ2Q1fE/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@royalsenteur1?_r=1&_t=ZS-99YpTMYawLN" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Panier -->
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cart-drawer">
+  <div class="cart-head">
+    <h2>Votre panier</h2>
+    <button class="close-btn" id="close-cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cart-total">0 FCFA</span>
+    </div>
+
+    <form id="checkout-form" class="checkout-form">
+      <label>
+        Nom complet
+        <input type="text" id="cust-name" name="name" placeholder="Votre nom" required />
+      </label>
+      <label>
+        Numéro de téléphone
+        <input type="tel" id="cust-phone" name="phone" placeholder="Ex : 07 89 57 35 29" required />
+      </label>
+      <label>
+        Adresse de livraison
+        <textarea id="cust-address" name="address" placeholder="Quartier, commune, repère..." required rows="2"></textarea>
+      </label>
+      <p class="deposit-note">NB : afin de confirmer et de réserver votre commande, nous vous demandons simplement un acompte de 2 000 FCFA.</p>
+      <button type="submit" class="checkout-btn" id="checkout-btn" disabled>
+        Valider sur WhatsApp
+      </button>
+    </form>
+  </div>
+</aside>
+
+<script src="js/script.js"></script>
+</body>
+</html>
