@@ -320,9 +320,12 @@ img { display: block; max-width: 100%; }
   line-height: 1;
 }
 
-.cart-items {
+.cart-scroll {
   flex: 1;
   overflow-y: auto;
+}
+
+.cart-items {
   padding: 12px 24px;
 }
 
