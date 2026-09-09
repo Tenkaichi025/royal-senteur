@@ -31,7 +31,7 @@ const PRODUCTS = [
   { id: "fakhar-lattafa", brand: "Lattafa", name: "Fakhar Lattafa", price: 20000, category: "Lattafa", img: "images/fakhar-lattafa.jpg" },
   { id: "vanilla-latte", brand: "Gulf Orchid", name: "Vanilla Latte", price: 30000, category: "Autres", img: "images/vanilla-latte.jpg" },
   { id: "french-avenue-ghost-spectre", brand: "French Avenue", name: "Ghost Spectre", price: 30000, category: "French Avenue", img: "images/french-avenue-ghost-spectre.jpg" },
-  { id: "french-avenue-spectre", brand: "French Avenue", name: "Spectre", price: 30000, category: "French Avenue", img: "images/french-avenue-spectre.jpg" },
+  { id: "french-avenue-spectre", brand: "French Avenue", name: "Spectre Wraith", price: 30000, category: "French Avenue", img: "images/french-avenue-spectre.jpg" },
   { id: "musc-devastating", brand: "Editions de Parfums", name: "Musc Devastating — Diamond Ribbon", price: 30000, category: "Autres", img: "images/musc-devastating.jpg" },
   { id: "oud-envoutant", brand: "Signature Royale Paris", name: "Oud Envoûtant", price: 30000, category: "Autres", img: "images/oud-envoutant.jpg" },
   { id: "khamrah-waha", brand: "Lattafa", name: "Khamrah Waha", price: 30000, category: "Lattafa", img: "images/khamrah-waha.jpg" },
@@ -44,6 +44,14 @@ const PRODUCTS = [
   { id: "jardin-enchante", brand: "Maison Manël", name: "Jardin Enchanté", price: 25000, category: "Maison Manël", img: "images/jardin-enchante.jpg", isNew: true },
   { id: "illusion-exquise", brand: "Maison Manël", name: "Illusion Exquise", price: 25000, category: "Maison Manël", img: "images/illusion-exquise.jpg", isNew: true },
   { id: "french-avenue-eclair-affair", brand: "French Avenue", name: "Eclair Affair", price: 25000, category: "French Avenue", img: "images/french-avenue-eclair-affair.jpg", isNew: true },
+  { id: "spectre", brand: "French Avenue", name: "Spectre", price: 25000, category: "French Avenue", img: "images/spectre.jpg", isNew: true },
+  { id: "lattafa-musamam-oud-edition", brand: "Lattafa", name: "Musamam — Oud Edition", price: 25000, category: "Lattafa", img: "images/lattafa-musamam-oud-edition.jpg", isNew: true },
+  { id: "lattafa-musamam-white-edition", brand: "Lattafa", name: "Musamam — White Edition", price: 25000, category: "Lattafa", img: "images/lattafa-musamam-white-edition.jpg", isNew: true },
+  { id: "french-avenue-zenith-vanilla", brand: "French Avenue", name: "Zenith Vanilla", price: 25000, category: "French Avenue", img: "images/french-avenue-zenith-vanilla.jpg", isNew: true },
+  { id: "french-avenue-liquid-brun", brand: "French Avenue", name: "Liquid Brun", price: 25000, category: "French Avenue", img: "images/french-avenue-liquid-brun.jpg", isNew: true },
+  { id: "maison-manel-oud-ambrosia-intense", brand: "Maison Manël", name: "Oud Ambrosia Intense", price: 25000, category: "Maison Manël", img: "images/maison-manel-oud-ambrosia-intense.jpg", isNew: true },
+  { id: "maison-manel-succulent-caramel", brand: "Maison Manël", name: "Succulent Caramel", price: 25000, category: "Maison Manël", img: "images/maison-manel-succulent-caramel.jpg", isNew: true },
+  { id: "khamrah", brand: "Lattafa", name: "Khamrah", price: 20000, category: "Lattafa", img: "images/khamrah.jpg", isNew: true },
 ];
 
 // ===== État du panier (persisté en localStorage) =====
