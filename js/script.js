@@ -231,7 +231,15 @@ checkoutForm.addEventListener("submit", (e) => {
     phone: document.getElementById("cust-phone").value.trim(),
     address: document.getElementById("cust-address").value.trim(),
   };
+
   if (!customer.name || !customer.phone || !customer.address) return;
+
+  // Numéro de téléphone : au moins 8 chiffres (espaces, +, - et parenthèses tolérés)
+  const phoneDigits = customer.phone.replace(/[\s().+-]/g, "");
+  if (!/^\d{8,15}$/.test(phoneDigits)) {
+    alert("Merci d'entrer un numéro de téléphone valide (au moins 8 chiffres).");
+    return;
+  }
 
   const message = encodeURIComponent(buildWhatsAppMessage(customer));
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
