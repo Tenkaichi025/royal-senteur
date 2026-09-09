@@ -242,7 +242,7 @@ checkoutForm.addEventListener("submit", (e) => {
   }
 
   const message = encodeURIComponent(buildWhatsAppMessage(customer));
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+  if (typeof fbq === "function") { fbq("track", "Lead"); } window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
 });
 
 // ===== Drawer panier =====
