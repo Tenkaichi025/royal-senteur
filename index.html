@@ -47,6 +47,10 @@
       <a href="https://www.facebook.com/share/1CygJ2Q1fE/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.tiktok.com/@royalsenteur1?_r=1&_t=ZS-99YpTMYawLN" target="_blank" rel="noopener">TikTok</a>
     </div>
+    <div class="footer-legal">
+      <span>© 2026 Royal Senteur — Tous droits réservés</span>
+      <span class="footer-credit">Site conçu par <a href="https://github.com/Tenkaichi025" target="_blank" rel="noopener">Tenkaichi025</a></span>
+    </div>
   </div>
 </footer>
 
@@ -86,6 +90,29 @@
     </div>
   </div>
 </aside>
+
+<!-- Zoom produit -->
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="modal-close" id="modal-close" aria-label="Fermer">&times;</button>
+  <div class="modal-img">
+    <img id="modal-img" src="" alt="" />
+  </div>
+  <div class="modal-info">
+    <div class="modal-brand" id="modal-brand"></div>
+    <h3 class="modal-name" id="modal-name"></h3>
+    <p class="modal-desc" id="modal-desc"></p>
+    <div class="modal-notes" id="modal-notes">
+      <div class="modal-note"><span>Tête</span><p id="modal-note-top"></p></div>
+      <div class="modal-note"><span>Cœur</span><p id="modal-note-heart"></p></div>
+      <div class="modal-note"><span>Fond</span><p id="modal-note-base"></p></div>
+    </div>
+    <div class="modal-footer">
+      <span class="modal-price" id="modal-price"></span>
+      <button class="add-btn" id="modal-add-btn"></button>
+    </div>
+  </div>
+</div>
 
 <script src="js/script.js"></script>
 </body>
